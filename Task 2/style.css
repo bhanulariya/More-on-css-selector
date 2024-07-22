@@ -1,0 +1,29 @@
+/* More on css selectors */
+
+
+/* Task 2 - Styled Navigation Menu */
+
+
+/* Descendant selector */
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Child Selector */
+
+ul>li {
+    display: inline;
+}
+
+
+/* Adjacent Sibling Selector */
+
+li+li {
+    margin: 10px;
+}

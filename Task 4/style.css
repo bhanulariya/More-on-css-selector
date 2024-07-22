@@ -1,0 +1,27 @@
+/* More on css selectors */
+
+
+/* Task 4 */
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(101, 101, 255);
+    font-size: 3rem;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(58, 58, 255);
+    box-shadow: 10px 10px 15px -3px black;
+    cursor: pointer;
+    transition: all 0.09s ease-in-out;
+}

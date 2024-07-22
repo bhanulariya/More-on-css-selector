@@ -1,0 +1,67 @@
+/* More on css selectors */
+
+
+/* Task 1 */
+
+
+/* Descendant Combinator */
+
+li a,
+p {
+    color: red;
+}
+
+
+/* Child Combinator */
+
+nav>h2 {
+    color: white;
+    background-color: black;
+}
+
+
+/* Attribute Selector */
+
+a[href="#"] {
+    color: red;
+    text-decoration: none;
+}
+
+a[class="active"] {
+    color: white;
+    text-decoration: underline;
+}
+
+a[target="_self"] {
+    background-color: grey;
+}
+
+
+/* Pseudo Selectors */
+
+
+/* Adding "...", three dots in last child of p tag in nav*/
+
+nav>p:last-child::after {
+    content: "...";
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Change the bullet points color with pseudo selector */
+
+ul>li::before {
+    content: "• ";
+    color: blue;
+}
+
+
+/* Second Last child of p tag in Nav*/
+
+nav>p:nth-last-child(2) {
+    color: red;
+    font-size: 30px;
+}
